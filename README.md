@@ -1,62 +1,133 @@
-# Web3 防骗工具箱 · 总入口
-![Web3 防骗工具箱海报](poster.png)
+# Web3 防骗工具箱
 
-> 把《价值互联网产业应用蓝皮书（2025）》（蓝皮书编写组）蒸馏成 10 个能直接用的「识别器」，全部开源、免费、可一键安装。
-> 一句话定位：**别人讲概念，我们给尺子；别人画大饼，我们量真金。**
+> 基于《价值互联网产业应用蓝皮书（2025）》蒸馏的 10 个开源识别器，帮你快速判断 Web3 项目的真实性与合规性。
 
 ---
 
-## 这是什么
+## 一、工具用途
 
-一套面向「想辨别真假 Web3 项目、规避资金盘与非法金融风险」的普通用户与从业者的开源技能套装。每个技能都基于蓝皮书的公开方法论蒸馏而来，已统一补全**蓝皮书署名、合规红线、来源版权专节**，以 **Apache-2.0** 协议发布。
+**一句话：别人讲概念，我们给尺子。**
 
----
+市面上 Web3 项目五花八门——"区块链溯源""通证经济""RWA 落地"……听着高大上，实则真假难辨。本工具箱提供 10 把"尺子"，帮你从五个维度快速识别：
+- 是否资金盘 / 诈骗
+- 是否踩合规红线
+- 概念是否混淆（上链 vs 发币 vs RWA）
+- 实体落地的可行性
+- 组织形式是否合理
 
-## 怎么拿到（三种方式）
-
-| 渠道 | 操作 |
-|---|---|
-| **ClawHub 一键安装**（推荐，公开后） | 在 [clawhub.ai](https://clawhub.ai) 搜各技能 slug，登录后一键装 |
-| **GitHub 下载** | 每个技能一个公开仓库，`git clone` 或 Download ZIP |
-| **本机已装** | 把对应技能目录复制到 `~/.workbuddy/skills/`（Windows 为 `%USERPROFILE%\.workbuddy\skills\`），重启 WorkBuddy 生效 |
-
-> 所有 ClawHub 页面目前为「安全扫描待审」状态，审核通过后转公开即可被搜索、一键安装。
+适用人群：普通投资者、创业者、企业数字化转型决策者、内容创作者。
 
 ---
 
-## 工具箱清单（10 个技能）
+## 二、安装步骤
 
-| # | 中文名 | slug | GitHub | ClawHub |
-|---|---|---|---|---|
-| 1 | W-ABCD 真假 Web3 识别器 | `web3-wabcd-identifier` | [仓库](https://github.com/63619990/web3-wabcd-identifier) | [页面](https://clawhub.ai/skills/web3-wabcd-identifier) |
-| 2 | 通证/代币化概念辨析器 | `token-concept-disambiguator` | [仓库](https://github.com/63619990/token-concept-disambiguator) | [页面](https://clawhub.ai/skills/token-concept-disambiguator) |
-| 3 | 合规边界红线检查 | `compliance-redline-check` | [仓库](https://github.com/63619990/compliance-redline-check) | [页面](https://clawhub.ai/skills/compliance-redline-check) |
-| 4 | 三类主导模式判别器 | `three-mode-classifier` | [仓库](https://github.com/63619990/three-mode-classifier) | [页面](https://clawhub.ai/skills/three-mode-classifier) |
-| 5 | 贡献计量与分配设计器 | `contribution-distribution-designer` | [仓库](https://github.com/63619990/contribution-distribution-designer) | [页面](https://clawhub.ai/skills/contribution-distribution-designer) |
-| 6 | 共建社区运营框架 | `co-build-community-ops` | [仓库](https://github.com/63619990/co-build-community-ops) | [页面](https://clawhub.ai/skills/co-build-community-ops) |
-| 7 | 风险评估与反例库 | `risk-assessment-antipattern` | [仓库](https://github.com/63619990/risk-assessment-antipattern) | [页面](https://clawhub.ai/skills/risk-assessment-antipattern) |
-| 8 | RWA 落地流程与路径设计器 | `rwa-landing-path` | [仓库](https://github.com/63619990/rwa-landing-path) | [页面](https://clawhub.ai/skills/rwa-landing-path) |
-| 9 | OPC / 超级个体落地清单 | `opc-individual-checklist` | [仓库](https://github.com/63619990/opc-individual-checklist) | [页面](https://clawhub.ai/skills/opc-individual-checklist) |
-| 10 | 监管范式与香港沙盒路径 | `regulation-hk-sandbox` | [仓库](https://github.com/63619990/regulation-hk-sandbox) | [页面](https://clawhub.ai/skills/regulation-hk-sandbox) |
+### 方式一：GitHub Clone（推荐新手）
 
-GitHub 统一地址：`https://github.com/63619990/<slug>`
-ClawHub 统一页面：`https://clawhub.ai/skills/<slug>`
+```bash
+git clone https://github.com/63619990/web3-defense-toolbox
+```
 
----
+克隆后进入对应 skill 目录即可使用。
 
-## 合规与署名（全套统一口径）
+### 方式二：ClawHub 一键安装
 
-- **署名**：每个技能引述均标注《价值互联网产业应用蓝皮书（2025）》蓝皮书编写组，正文末尾设「来源、署名与版权」专节。
-- **合规红线**（蓝皮书第三篇·第五章口径）：境内聚焦"非金融"的数字化赋能（溯源、贡献计量、RDA 数据资产等），**不得涉及通证代币化、虚拟货币交易、交易所等加密金融行为**；稳定币/虚拟货币交易属非法金融活动；为境外违规项目提供技术支持需连带追责。
-- **免责声明**：本工具箱仅作识别与认知参考，**不构成任何投资建议**；参与任何项目前请以官方监管文件为准。
-- **协议**：Apache-2.0，引用须注明出处。
+在支持 ClawHub 的平台（如 WorkBuddy）中搜索 slug：
 
----
+```
+web3-defense-toolbox
+```
 
-## 配套分享文案
+点击安装，自动完成依赖配置。
 
-本仓库 `分享文案.md` 含小红书版（≤950 字）、公众号版、海报文案、短视频口播钩子四套可直接转发的文案，供推广使用。
+### 方式三：单技能单独安装
+
+如需仅安装某个具体识别器，直接复制对应 skill 目录即可，例如：
+
+```bash
+# 仅安装 W-ABCD 真假识别器
+cp -r skills/web3-wabcd-identifier ~/.workbuddy/skills/
+```
 
 ---
 
-账号归属：GitHub 与 ClawHub 均为 `63619990`。
+## 三、核心功能介绍
+
+| 序号 | 技能名称 | 功能说明 |
+|------|----------|----------|
+| 1 | **W-ABCD 真假识别器** | 五要素扫描项目真伪：资金盘、话术包装、链上验证等 |
+| 2 | **合规红线检查** | 对照蓝皮书原文，划清"能做/不能做"边界 |
+| 3 | **概念辨析器** | 区分"上链/发币/RWA/通证化"等易混淆概念 |
+| 4 | **三类模式判别** | 判别项目属于原生型/产业变革型/链改-资产支持型 |
+| 5 | **贡献分配设计器** | 设计多元贡献计量与公平分润机制 |
+| 6 | **共建社区运营框架** | 搭建"消费即投资"的事业共同体 |
+| 7 | **风险评估反例库** | 内置三大爆雷原型：伪 RWA、责任真空、慢资产快金融 |
+| 8 | **RWA 落地路径** | 端到端 RWA 落地路线图（A-J 十环节） |
+| 9 | **OPC 个体清单** | 一人公司/数字游民的轻创业合规路径 |
+| 10 | **香港沙盒路径** | 跨境融资的合规通道设计 |
+
+---
+
+## 四、基本使用方法
+
+### 示例 1：识别一个可疑项目
+
+假设有人拉你进"Web3 实体落地"项目群：
+
+1. 先用 **W-ABCD 真假识别器** 跑一遍，看是否触发资金盘特征
+2. 再用 **合规红线检查** 确认境内是否踩线
+3. 用 **概念辨析器** 搞清对方说的是"上链溯源"还是"发币融资"
+
+### 示例 2：你自己要做一个溯源项目
+
+1. 用 **三类模式判别** 确定你的主导模式
+2. 用 **RWA 落地路径** 规划 A→J 完整流程
+3. 用 **风险评估反例库** 自检是否有结构性风险
+4. 用 **合规红线检查** 过一遍边界
+
+### 示例 3：想做个 OPC 一人公司
+
+1. 用 **OPC 个体清单** 对号入座，看自己适合哪种路径
+2. 用 **共建社区运营框架** 设计用户参与机制
+3. 用 **贡献分配设计器** 制定分润规则
+
+---
+
+## 五、常见问题
+
+### Q1：这些工具是免费的吗？
+是的。全部基于 Apache-2.0 协议开源，可自由使用、修改、分发。
+
+### Q2：需要编程基础吗？
+不需要。每个技能都是开箱即用的判断框架，按指引回答几个问题即可得出结论。
+
+### Q3：如何知道某个项目是否合规？
+使用 **合规红线检查** 技能，对照蓝皮书原文逐项核对。红线部分已标红，一目了然。
+
+### Q4：项目到底是不是真的上链了？
+使用 **W-ABCD 真假识别器**，其中 C 环节就是"链上验证"——教你怎么在浏览器里查合约、查交易记录。
+
+### Q5：可以商用吗？
+可以。Apache-2.0 协议允许商用，但需在衍生作品中保留署名。
+
+### Q6：遇到问题如何反馈？
+请在 GitHub Issues 提交，或在 ClawHub 社区留言。
+
+---
+
+## 六、版权与来源
+
+本工具箱基于以下公开成果蒸馏而成：
+
+- 《价值互联网产业应用蓝皮书（2025）》，蓝皮书编写组著
+- 作者：数链学长（63619990）
+
+所有内容坚持去币化叙事，聚焦实体落地与合规边界，仅供识别参考，不构成投资建议。
+
+---
+
+**👇 扫码直达工具箱**
+
+GitHub: https://github.com/63619990/web3-defense-toolbox  
+ClawHub: 搜 slug `web3-defense-toolbox`
+
+**🛡️ 防骗不靠运气，靠工具。**
